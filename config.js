@@ -1,0 +1,32 @@
+const colors = {
+    fg: "#D3C6AA",
+    red: "#E67E80",
+    yellow: "#DBBC7F",
+    green: "#A7C080",
+    blue: "#7FBBB3",
+    purple: "#D699B6",
+    aqua: "#83C092",
+    orange: "#E69875",
+    grey: "#7A8478",
+    grey1: "#859289",
+    grey2: "#9DA9A0",
+    bgDark: "#1E2326",
+    bg: "#272E33",
+    bg1: "#2E383C",
+    bg2: "#374145",
+    bg3: "#414B50",
+    bg4: "#495156",
+    bg5: "#4F5B58",
+    bgRed: "#493B40",
+    bgYellow: "#45443C",
+    bgGreen: "#3C4841",
+    bgBlue: "#384B55",
+    bgPurple: "#463F48",
+    bgVisual: "#4C3743",
+};
+
+const fonts = {
+    jetmononf: "JetBrainsMono Nerd Font",
+    caskmononf: "CaskaydiaMono Nerd Font",
+    caskcovenf: "CaskaydiaCove Nerd Font",
+};
