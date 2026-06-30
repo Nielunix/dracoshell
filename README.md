@@ -6,3 +6,10 @@
 
 - [ ] Must add something related to dragons
 - [ ] add an app selector
+
+## Clone The Repo
+<details><summary> Linux and Mac </summary>
+
+```sh
+git clone git@github.com:Nielunix/dracoshell.git ~/.config/nvim
+```
