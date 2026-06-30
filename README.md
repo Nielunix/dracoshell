@@ -9,8 +9,6 @@
 - [ ] add a systemtray
 
 ## Clone The Repo
-<details><summary> Linux and Mac </summary>
-
 ```sh
 git clone git@github.com:Nielunix/dracoshell.git ~/.config/nvim
 ```
