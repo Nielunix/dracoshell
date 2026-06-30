@@ -10,5 +10,5 @@
 
 ## Clone The Repo
 ```sh
-git clone git@github.com:Nielunix/dracoshell.git ~/.config/nvim
+git clone git@github.com:Nielunix/dracoshell.git ~/.config/quickshell
 ```
