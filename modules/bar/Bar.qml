@@ -3,65 +3,60 @@ import QtQuick.Layouts
 import Quickshell
 
 PanelWindow {
-    id: root
+  id: root
 
-    color: 'transparent'
-    implicitHeight: 35
+  color: 'transparent'
+  implicitHeight: 35
+
+  anchors {
+    top: true
+    right: true
+    left: true
+  }
+
+  //right
+  RowLayout {
+    id: cright
+
+    spacing: 5
 
     anchors {
-        top: true
-        right: true
-        left: true
+      right: parent.right
+      verticalCenter: parent.verticalCenter
+      rightMargin: 15
     }
 
-    //right
-    RowLayout {
-        id: cright
-        
-        spacing: 5
+    Battery {}
 
-        anchors {
-            right: parent.right
-            verticalCenter: parent.verticalCenter
-            rightMargin: 15
-        }
+    Clock {}
+  }
 
-        Battery {
-        }
+  //center
+  RowLayout {
+    id: ccenter
 
-        Clock {
-        }
+    spacing: 16
 
+    anchors {
+      centerIn: parent
     }
 
-    //center
-    RowLayout {
-        id: ccenter
+    // HyprWorkspace {}
+    NiriWorkspace {}
+  }
 
-        spacing: 16
+  //left
+  RowLayout {
+    id: cleft
 
-        anchors {
-            centerIn: parent
-        }
+    spacing: 16
 
-        HyprWorkspace {
-        }
-
+    anchors {
+      left: parent.left
+      verticalCenter: parent.verticalCenter
+      leftMargin: 15
     }
-
-    //left
-    RowLayout {
-        id: cleft
-
-        spacing: 16
-
-        anchors {
-            left: parent.left
-            verticalCenter: parent.verticalCenter
-            leftMargin: 15
-        }
-        // HyprWindow {}
-
-    }
-
+    // HyprWindow {}
+    NiriWindow {}
+  }
 }
