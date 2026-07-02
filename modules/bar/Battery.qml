@@ -72,9 +72,9 @@ Rectangle {
   }
 
   implicitWidth: battery.implicitWidth + 20
-  implicitHeight: battery.implicitHeight
+  implicitHeight: battery.implicitHeight + 4
   color: Config.colors.bg
-  radius: 10
+  radius: 5
 
   Text {
     id: battery
@@ -89,8 +89,8 @@ Rectangle {
     color: root.stateColor
 
     font {
-      family: Config.fonts.jetmononf
-      pixelSize: 20
+      family: Config.fonts.caskmononf
+      pixelSize: 18
     }
   }
 }

@@ -6,17 +6,20 @@ import Niri
 
 ShellRoot {
   id: root
+  
+Bar {}
 
-  Bar {}
+
+// NOTE: Get Niri Log
   Item {
     Niri {
-        id: niri
-        Component.onCompleted: connect()
+      id: niri
+      Component.onCompleted: connect()
 
-        onConnected: console.log("Connected to niri")
-        onErrorOccurred: function(error) {
-            console.error("Connection error:", error)
-        }
+      onConnected: console.log("Connected to niri")
+      onErrorOccurred: function (error) {
+        console.error("Connection error:", error);
+      }
     }
-}
+  }
 }

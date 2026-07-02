@@ -7,7 +7,7 @@ Rectangle {
 
   implicitWidth: time.implicitWidth + 13
   implicitHeight: time.implicitHeight + 3
-  radius: 10
+  radius: 5
   color: Config.colors.bg
 
   SystemClock {
