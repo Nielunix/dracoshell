@@ -6,7 +6,7 @@
 
 - [ ] Must add something related to dragons
 - [ ] add an app selector
-- [ ] add a systemtray
+- [x] add a systemtray
 
 ## Clone The Repo
 ```sh
