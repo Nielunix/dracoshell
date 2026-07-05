@@ -8,7 +8,7 @@ Rectangle {
 
   implicitWidth: wsp.implicitWidth + 10
   implicitHeight: 28
-  color: Config.colors.bg
+  color: Config.colorsCat.Crust
   radius: 5
 
   RowLayout {
@@ -30,7 +30,9 @@ Rectangle {
           anchors.bottomMargin: 4
           implicitWidth: model.name ? wsName.implicitWidth + 10 : 30 //qmllint disable
           height: 2
-          color: model.isActive ? Config.colors.fg : Config.colors.bgPurple //qmllint disable
+          color: Config.colorsCat.Lavender
+          // color: model.isActive ? Config.colors.fg : Config.colors.bgPurple //qmllint disable
+          opacity: model.isActive ? 1 : 0.3 //qmllint disable 
         }
         Text {
           id: wsName
@@ -39,7 +41,8 @@ Rectangle {
             top: parent.top
             topMargin: 2
           }
-          color: model.isActive ? Config.colors.fg : Config.colors.bgPurple //qmllint disable
+          color: Config.colorsCat.Lavender
+          opacity: model.isActive ? 1 : 0.3 //qmllint disable 
           text: model.name //qmllint disable
           font {
             family: Config.fonts.caskmononf

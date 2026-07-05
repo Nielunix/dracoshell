@@ -1,3 +1,5 @@
+//@ pragma UseQApplication
+
 import "./config.js" as Config
 import "./modules/bar/"
 import QtQuick

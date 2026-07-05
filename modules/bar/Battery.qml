@@ -62,18 +62,18 @@ Rectangle {
   }
   readonly property string stateColor: {
     if (batPercent >= 0.2)
-      return Config.colors.fg;
+      return Config.colorsCat.Green;
 
     if (batPercent >= 0.15)
-      return Config.colors.orange;
+      return Config.colorsCat.Peach;
 
     if (batPercent < 0.05)
-      return Config.colors.red;
+      return Config.colorsCat.Red;
   }
 
   implicitWidth: battery.implicitWidth + 20
   implicitHeight: battery.implicitHeight + 4
-  color: Config.colors.bg
+  color: Config.colorsCat.Crust
   radius: 5
 
   Text {

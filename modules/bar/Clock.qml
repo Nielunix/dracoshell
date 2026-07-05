@@ -8,7 +8,7 @@ Rectangle {
   implicitWidth: time.implicitWidth + 13
   implicitHeight: time.implicitHeight + 3
   radius: 5
-  color: Config.colors.bg
+  color: Config.colorsCat.Crust
 
   SystemClock {
     id: clock
@@ -20,7 +20,7 @@ Rectangle {
     id: time
     anchors.centerIn: parent
     text: Qt.formatDateTime(clock.date, "hh:mm")
-    color: Config.colors.fg
+    color: Config.colorsCat.Red
 
     font {
       family: Config.fonts.caskmononf

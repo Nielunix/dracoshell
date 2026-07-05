@@ -57,6 +57,7 @@ PanelWindow {
       leftMargin: 15
     }
     // HyprWindow {}
-    NiriWindow {}
+    // NiriWindow {}
+    SystemTray {}
   }
 }
