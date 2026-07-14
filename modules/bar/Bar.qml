@@ -41,8 +41,8 @@ PanelWindow {
       centerIn: parent
     }
 
-    // HyprWorkspace {}
-    NiriWorkspace {}
+    HyprWorkspace {}
+    // NiriWorkspace {}
   }
 
   //left
