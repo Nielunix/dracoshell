@@ -7,6 +7,7 @@
 - [ ] Must add something related to dragons and furry
 - [ ] add an app selector
 - [x] add a systemtray
+- [ ] make a flake so we can test the shell without installing it (for nix)
 
 ## Clone The Repo
 ```sh
