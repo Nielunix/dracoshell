@@ -3,6 +3,7 @@
 
 import "./config.js" as Config
 import "./modules/bar/"
+import "./modules/notification/"
 import QtQuick
 import Quickshell
 
@@ -21,6 +22,9 @@ ShellRoot {
 
     id: root
 
-    Bar {
-    }
+    Bar {}
+
+    Notification {}
+
+    
 }

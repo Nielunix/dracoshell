@@ -6,7 +6,7 @@ import "../../config.js" as Config
 
 Rectangle {
   id: root
-  color: Config.colorsCat.Base
+  color: Config.colorsCat.Crust
   radius: 5
   height: 28
   implicitWidth: if (row.implicitWidth === 0) {
