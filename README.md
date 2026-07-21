@@ -14,3 +14,6 @@
 ```sh
 git clone git@github.com:Nielunix/dracoshell.git ~/.config/quickshell
 ```
+
+## inspiration :
+<a href="https://github.com/MystiaFin/shell">MystiaFin shell</a></br>

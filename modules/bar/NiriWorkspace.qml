@@ -1,14 +1,13 @@
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Shapes
-import "../../config.js" as Config
+import qs
 
 Rectangle {
   id: root
 
   implicitWidth: wsp.implicitWidth + 10
   implicitHeight: 28
-  color: Config.colorsCat.Crust
+  color: Style.bg
   radius: 5
 
   RowLayout {
@@ -30,7 +29,7 @@ Rectangle {
           anchors.bottomMargin: 4
           implicitWidth: model.name ? wsName.implicitWidth + 10 : 30 //qmllint disable
           height: 2
-          color: Config.colorsCat.Lavender
+          color: Style.cyan
           // color: model.isActive ? Config.colors.fg : Config.colors.bgPurple //qmllint disable
           opacity: model.isActive ? 1 : 0.3 //qmllint disable 
         }
@@ -41,11 +40,11 @@ Rectangle {
             top: parent.top
             topMargin: 2
           }
-          color: Config.colorsCat.Lavender
+          color: Style.cyan
           opacity: model.isActive ? 1 : 0.3 //qmllint disable 
           text: model.name //qmllint disable
           font {
-            family: Config.fonts.caskmononf
+            family: Style.caskmononf
             pixelSize: 18
           }
         }

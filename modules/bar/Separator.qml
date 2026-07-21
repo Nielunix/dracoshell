@@ -1,13 +1,13 @@
 import QtQuick
-import "../../config.js" as Config
+import qs
 
 Text {
   id: root
   text: "|"
-  color: Config.colors.green
+  color: Style.green
   anchors.verticalCenter: parent.verticalCenter
   font {
-    family: Config.fonts.jetmononf
+    family: Style.jetmononf
     pixelSize: 13
   }
 }

@@ -1,6 +1,6 @@
-import "../../config.js" as Config
 import QtQuick
 import Quickshell
+import qs
 
 Rectangle {
   id: root
@@ -8,7 +8,7 @@ Rectangle {
   implicitWidth: time.implicitWidth + 13
   implicitHeight: time.implicitHeight + 3
   radius: 5
-  color: Config.colorsCat.Crust
+  color: Style.bg
 
   SystemClock {
     id: clock
@@ -20,10 +20,10 @@ Rectangle {
     id: time
     anchors.centerIn: parent
     text: Qt.formatDateTime(clock.date, "hh:mm")
-    color: Config.colorsCat.Red
+    color: Style.red
 
     font {
-      family: Config.fonts.caskmononf
+      family: Style.caskmononf
       pixelSize: 20
       letterSpacing: 1
     }

@@ -1,6 +1,6 @@
-import "../../config.js" as Config
 import QtQuick
 import Quickshell.Services.UPower
+import qs
 
 //icon return String.fromCodePoint(0x.....)
 Rectangle {
@@ -60,20 +60,20 @@ Rectangle {
     if (batPercent >= 0)
       return ".........";
   }
-  readonly property string stateColor: {
+  readonly property color stateColor: {
     if (batPercent >= 0.2)
-      return Config.colorsCat.Green;
+      return Style.green;
 
     if (batPercent >= 0.15)
-      return Config.colorsCat.Peach;
+      return Style.organge;
 
     if (batPercent < 0.05)
-      return Config.colorsCat.Red;
+      return Style.red;
   }
 
   implicitWidth: battery.implicitWidth + 20
   implicitHeight: battery.implicitHeight + 4
-  color: Config.colorsCat.Crust
+  color: Style.bg
   radius: 5
 
   Text {
@@ -89,7 +89,7 @@ Rectangle {
     color: root.stateColor
 
     font {
-      family: Config.fonts.caskmononf
+      family: Style.caskmononf
       pixelSize: 18
     }
   }

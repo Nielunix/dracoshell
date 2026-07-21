@@ -4,6 +4,7 @@
 import "./config.js" as Config
 import "./modules/bar/"
 import "./modules/notification/"
+import "./modules/"
 import QtQuick
 import Quickshell
 
@@ -26,5 +27,6 @@ ShellRoot {
 
     Notification {}
 
+    Overlay {}
     
 }

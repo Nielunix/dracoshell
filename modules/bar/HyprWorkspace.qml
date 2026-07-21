@@ -1,4 +1,4 @@
-import "../../config.js" as Config
+import qs
 import QtQuick
 import QtQuick.Layouts
 import Quickshell.Hyprland
@@ -9,7 +9,7 @@ Rectangle {
   implicitHeight: 25
   implicitWidth: row.implicitWidth + 30
   radius: 5
-  color: Config.colorsCat.Crust
+  color: Style.bg
 
   RowLayout {
     id: row
@@ -37,10 +37,10 @@ Rectangle {
           anchors.top: parent.top
           anchors.horizontalCenter: parent.horizontalCenter
           anchors.topMargin: 3
-          color: container.isActive ? Config.colorsCat.Sapphire : (container.ws ? Config.colorsCat.Lavender : Config.colorsCat.Surface1)
+          color: container.isActive ? Style.blue : (container.ws ? Style.darkFg : Style.selectBg)
           text: container.isActive ? "<b>" + (container.index + 1) + "</b>" : container.index + 1
           font {
-            family: Config.fonts.caskmononf
+            family: Style.caskmononf
             pixelSize: 16
           }
         }
@@ -50,7 +50,7 @@ Rectangle {
           height: 2
           anchors.bottom: parent.bottom
           anchors.bottomMargin: 2
-          color: container.isActive ? Config.colorsCat.Sapphire : Config.colorsCat.Base
+          color: container.isActive ? Style.blue : (container.ws ? Style.darkFg : Style.selectBg)
         }
       }
     }

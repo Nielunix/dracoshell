@@ -2,11 +2,11 @@ import QtQuick
 import Quickshell
 import QtQuick.Layouts
 import Quickshell.Services.SystemTray
-import "../../config.js" as Config
+import qs
 
 Rectangle {
   id: root
-  color: Config.colorsCat.Crust
+  color: Style.bg
   radius: 5
   height: 28
   implicitWidth: if (row.implicitWidth === 0) {
