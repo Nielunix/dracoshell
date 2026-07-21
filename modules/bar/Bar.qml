@@ -57,8 +57,8 @@ Scope {
         verticalCenter: parent.verticalCenter
         leftMargin: 15
       }
-      SystemTray {}
       HyprWorkspace {}
+      SystemTray {}
     }
   }
 }

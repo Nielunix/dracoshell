@@ -1,7 +1,6 @@
 //@ pragma UseQApplication
 // import Niri
 
-import "./config.js" as Config
 import "./modules/bar/"
 import "./modules/notification/"
 import "./modules/"

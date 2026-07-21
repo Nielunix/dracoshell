@@ -50,7 +50,7 @@ PanelWindow {
       Rectangle {
         anchors.fill: parent
         anchors.margins: 5
-        radius: 5
+        radius: 10
       }
     }
   }

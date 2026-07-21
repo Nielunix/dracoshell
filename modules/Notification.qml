@@ -1,4 +1,4 @@
-import "../../config.js" as Config
+import qs
 import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
@@ -55,7 +55,7 @@ Scope {
           Layout.fillWidth: true
           Layout.preferredHeight: content.implicitHeight + 20
           bottomLeftRadius: 10
-          color: Config.colorsCat.Crust
+          color: Style.bg
 
           RowLayout {
             id: content
@@ -83,7 +83,11 @@ Scope {
                 Layout.leftMargin: 5
                 Layout.topMargin: 2
                 text: notifCapsule.modelData.summary
-                color: notifCapsule.modelData.urgency === NotificationUrgency.Critical ? Config.colorsCat.Red : Config.colorsCat.Text
+                font {
+                  family: Style.caskmononf
+                  pixelSize: 14
+                }
+                color: notifCapsule.modelData.urgency === NotificationUrgency.Critical ? Style.red : Style.fg
                 elide: Text.ElideRight
               }
 
@@ -95,7 +99,11 @@ Scope {
                 Layout.rightMargin: 5
                 visible: text !== ""
                 text: notifCapsule.modelData.body
-                color: Config.colorsCat.Text
+                font {
+                  family: Style.caskmononf
+                  pixelSize: 13
+                }
+                color: Style.fg
                 wrapMode: Text.WordWrap
               }
             }
