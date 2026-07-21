@@ -1,5 +1,7 @@
 # A nice shell made with quickshell
 
+There are no pictures of it right now because it's a work in progress :/
+
 > [!WARNING]
 > This is a project made for fun because i like to develop so the updates wont always be stable 
 > If you want to use the project I recommand to fork it and maintain your own version of it
