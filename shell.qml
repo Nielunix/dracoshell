@@ -2,7 +2,6 @@
 // import Niri
 
 import "./modules/bar/"
-import "./modules/notification/"
 import "./modules/"
 import QtQuick
 import Quickshell
